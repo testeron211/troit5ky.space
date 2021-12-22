@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+a {text-decoration: none;}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+#avatar-border {
+    display: grid;
+    padding: 2px;
+    border-radius: 100%;
+    background: linear-gradient(135deg,#505add 34.4%,#be40c0 66.11%,#fba82b 96.37%);
+    margin-bottom: 4px;
+}
+
+#avatar {
+    height: 128px;
+    border-radius: 100%;
+}
+
+#title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    margin: 0 8px;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 8px;
+    border-radius: 1rem;
+    background: rgb(37, 37, 37);
+}
+
+.links a {
+    font-weight: 500;
+    color: white
+}
+
+.icon {
+    height: 16px;
+    margin-right: 4px;
+}
+
+.button {
+    padding: 8px;
+    background: rgb(49, 49, 49);
+    border-radius: 1rem;
+    transition: .2s;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a:not(:last-child) {
+    margin-right: 4px;
+}
+
+#github:hover { background: rgb(53, 58, 71); }
+#telegram:hover { background: rgb(55, 87, 102); }
+#vk:hover { background: rgb(61, 80, 102); }
+#lastfm:hover { background: rgb(110, 66, 66); }
+
+@media screen and (max-width: 512px) {
+    .links {
+        flex-direction: column;
+    }
+
+    .links a:not(:last-child) {
+        margin-bottom: 8px;
+    }
+}
