@@ -22,6 +22,10 @@ body {
 }
 
 #avatar-border {
+    -webkit-animation-name: shakal;
+	-webkit-animation-duration: 6.0s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
     display: grid;
     padding: 2px;
     border-radius: 100%;
@@ -44,9 +48,6 @@ body {
     margin: 0 8px;
     justify-content: center;
     flex-flow: row wrap;
-    padding: 8px;
-    border-radius: 1rem;
-    background: rgb(37, 37, 37);
 }
 
 .links a {
@@ -74,6 +75,10 @@ body {
     margin-right: 4px;
 }
 
+audio {
+    margin-top: 8px;
+}
+
 #github:hover { background: rgb(53, 58, 71); }
 #telegram:hover { background: rgb(55, 87, 102); }
 #vk:hover { background: rgb(61, 80, 102); }
@@ -88,4 +93,22 @@ body {
 		margin-right: 0;
         margin-bottom: 8px;
     }
+}
+
+@-webkit-keyframes shakal 
+{
+	0% 
+	{
+		-webkit-transform: rotateZ(0deg);
+	}
+		
+	50% 
+	{
+		-webkit-transform: rotateZ(180deg);
+	}
+	
+	100% 
+	{
+		-webkit-transform: rotateZ(360deg);
+	}
 }
