@@ -23,7 +23,7 @@ body {
 
 #avatar-border {
     -webkit-animation-name: shakal;
-	-webkit-animation-duration: 6.0s;
+	-webkit-animation-duration: 2s;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
     display: grid;
@@ -48,10 +48,12 @@ body {
     margin: 0 8px;
     justify-content: center;
     flex-flow: row wrap;
+    column-gap: 8px;
+    row-gap: 8px;
 }
 
 .links a {
-    font-weight: 500;
+    font-weight: bold;
     color: white
 }
 
@@ -71,29 +73,10 @@ body {
     justify-content: center;
 }
 
-.links a:not(:last-child) {
-    margin-right: 4px;
-}
-
-audio {
-    margin-top: 8px;
-}
-
 #github:hover { background: rgb(82, 82, 82); }
 #telegram:hover { background: rgb(55, 87, 102); }
 #vk:hover { background: rgb(61, 80, 102); }
 #lastfm:hover { background: rgb(110, 66, 66); }
-
-@media screen and (max-width: 512px) {
-    .links {
-        flex-direction: column;
-    }
-
-    .links a:not(:last-child) {
-		margin-right: 0;
-        margin-bottom: 8px;
-    }
-}
 
 @-webkit-keyframes shakal 
 {
