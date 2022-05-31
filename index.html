@@ -3,23 +3,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="about" content="troit5ky.ru страница, ну или же профиль | troit5ky.ru about or links page | @troit5ky | @tr5ky">
+    <meta name="description" content="troit5ky.ru страница, ну или же профиль | troit5ky.ru about or links page | @troit5ky | @tr5ky">
     <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <title>troit5ky</title>
 </head>
 <body>
+    <svg id="wave" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+    </svg>
     <div class="info">
         <div id="avatar-border"><img id="avatar" src="./assets/img/avatar.jpg"></div>
         <span id="title">troit5ky</span>
-        <span id="desc">позвони мне на домашний))</span>
+        <span id="desc">mood: волны</span>
     </div>
     <div class="links">
-        <a target="_blank" href="//github.com/testeron211"><div class="button" id="github"><img src="assets/img/github.png" class="icon">GitHub</div></a>
-        <a target="_blank" href="//codestats.net/users/troit5ky"><div class="button" id="github"><img src="https://codestats.net/assets/frontend/images/Logo-92e1d93256eae2d7dde539f1df59b06c.svg?vsn=d" class="icon">Code::Stats</div></a>
-        <a target="_blank" href="//t.me/tr5ky"><div class="button" id="telegram"><img src="assets/img/telegram.png" class="icon">Telegram</div></a>
-        <a target="_blank" href="//vk.com/troit5ky"><div class="button" id="vk"><img src="assets/img/vk.png" class="icon">VK</div></a>
-        <a target="_blank" href="//last.fm/user/testeron211"><div class="button" id="lastfm"><img src="assets/img/lastfm.png" class="icon">Last.FM</div></a>
+        <a target="_blank" href="//github.com/testeron211"><div class="button" id="github"><img src="assets/img/github.png" class="icon"><span>GitHub</span></div></a>
+        <a target="_blank" href="//codestats.net/users/troit5ky"><div class="button" id="github"><img src="https://codestats.net/assets/frontend/images/Logo-92e1d93256eae2d7dde539f1df59b06c.svg?vsn=d" class="icon"><span>Code::Stats</span></div></a>
+        <a target="_blank" href="//t.me/tr5ky"><div class="button" id="telegram"><img src="assets/img/telegram.png" class="icon"><span>Telegram</span></div></a>
+        <a target="_blank" href="//vk.com/troit5ky"><div class="button" id="vk"><img src="assets/img/vk.png" class="icon"><span>VK</span></div></a>
+        <a target="_blank" href="//last.fm/user/testeron211"><div class="button" id="lastfm"><img src="assets/img/lastfm.png" class="icon"><span>Last.FM</span></div></a>
     </div>
 </body>
 </html>

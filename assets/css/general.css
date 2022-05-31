@@ -5,13 +5,22 @@ a {text-decoration: none;}
 body {
     margin: 0;
     height: 100vh;
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(0, 0, 0);
     color: white;
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    z-index: -999;
+    opacity: 5%;
 }
 
 .info {
@@ -21,21 +30,10 @@ body {
     margin-bottom: 8px;
 }
 
-#avatar-border {
-    -webkit-animation-name: shakal;
-	-webkit-animation-duration: 2s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
-    display: grid;
-    padding: 2px;
-    border-radius: 100%;
-    background: linear-gradient(135deg,#505add 34.4%,#be40c0 66.11%,#fba82b 96.37%);
-    margin-bottom: 4px;
-}
-
 #avatar {
     height: 128px;
     border-radius: 100%;
+    border: 3px solid rgba(32, 32, 32, .6);
 }
 
 #title {
@@ -58,14 +56,22 @@ body {
 }
 
 .icon {
-    height: 16px;
-    margin-right: 4px;
+    height: 21px;
+}
+
+.button span {
+    content-visibility: hidden;
+}
+
+.button:hover span {
+    margin-left: 4px;
+    content-visibility: visible;
 }
 
 .button {
     padding: 8px;
-    background: rgb(49, 49, 49);
-    border-radius: 1rem;
+    background: rgba(16, 16, 16, .6);
+    border-radius: 2rem;
     transition: .2s;
     display: flex;
     flex-direction: row;
@@ -73,25 +79,35 @@ body {
     justify-content: center;
 }
 
-#github:hover { background: rgb(82, 82, 82); }
-#telegram:hover { background: rgb(55, 87, 102); }
-#vk:hover { background: rgb(61, 80, 102); }
-#lastfm:hover { background: rgb(110, 66, 66); }
+#github:hover { background: rgba(82, 82, 82, .6); }
+#telegram:hover { background: rgba(55, 87, 102, .6); }
+#vk:hover { background: rgba(61, 80, 102, .6); }
+#lastfm:hover { background: rgba(126, 114, 114, .6); }
 
-@-webkit-keyframes shakal 
-{
-	0% 
-	{
-		-webkit-transform: rotateZ(0deg);
-	}
-		
-	50% 
-	{
-		-webkit-transform: rotateZ(180deg);
-	}
-	
-	100% 
-	{
-		-webkit-transform: rotateZ(360deg);
-	}
-}
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
