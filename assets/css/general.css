@@ -58,15 +58,6 @@ body {
     height: 21px;
 }
 
-.button span {
-    content-visibility: hidden;
-}
-
-.button:hover span {
-    margin-left: 4px;
-    content-visibility: visible;
-}
-
 .button {
     padding: 8px;
     background: rgba(54, 54, 54, .6);
@@ -114,6 +105,5 @@ body {
     .wave {
       height:40px;
       min-height:40px;
-      margin-bottom: -7px;
     }
   }
