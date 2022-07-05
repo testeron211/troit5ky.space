@@ -5,7 +5,7 @@ a {text-decoration: none;}
 body {
     margin: 0;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(225deg, #8a4e6b, #291850);
     color: white;
     font-family: 'Roboto', sans-serif;
     display: flex;
@@ -32,14 +32,14 @@ body {
 #avatar {
     height: 128px;
     border-radius: 100%;
-    border: 3px solid rgba(76, 76, 76, .4);
+    border: 3px solid rgba(42, 42, 42, .6);
     cursor: pointer;
     transition: .3s;
 }
 
 #avatar:hover {
     height: 140px;
-    border-color: rgba(96, 51, 128, .4);
+    border-color: rgba(102, 117, 61, .6);
 }
 
 #title {
@@ -71,7 +71,7 @@ body {
 
 .button {
     padding: 8px;
-    background: rgba(76, 76, 76, .4);
+    background: rgba(42, 42, 42, .6);
     border-radius: 2rem;
     transition: .3s;
     display: flex;
@@ -80,10 +80,10 @@ body {
     justify-content: center;
 }
 
-#github:hover { background: rgba(128, 128, 128, .4); }
-#telegram:hover { background: rgba(51, 104, 128, .4); }
-#vk:hover { background: rgba(51, 88, 128, .4); }
-#lastfm:hover { background: rgba(128, 51, 52, .4); }
+#github:hover { background: rgba(117, 117, 117, .6); }
+#telegram:hover { background: rgba(47, 95, 117, .6); }
+#vk:hover { background: rgba(47, 81, 117, .6); }
+#lastfm:hover { background: rgba(117, 47, 48, .6); }
 
 .parallax > use {
     animation: move-forever 54s cubic-bezier(.55,.5,.45,.5)     infinite;
