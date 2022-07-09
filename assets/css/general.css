@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 a {text-decoration: none;}
 
 body {
     margin: 0;
     height: 100vh;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(225deg, #8a4e6b, #291850);
     color: white;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,12 +32,23 @@ body {
 #avatar {
     height: 128px;
     border-radius: 100%;
-    border: 3px solid rgba(54, 54, 54, .6);
+    border: 3px solid rgba(42, 42, 42, .6);
+    cursor: pointer;
+    transition: .3s;
+}
+
+#avatar:hover {
+    height: 140px;
+    border-color: rgba(102, 117, 61, .6);
 }
 
 #title {
     font-size: 2em;
     font-weight: bold;
+}
+
+#subtitle {
+    color: gray;
 }
 
 .links {
@@ -55,23 +66,24 @@ body {
 
 .icon {
     height: 21px;
+    width: 21px;
 }
 
 .button {
     padding: 8px;
-    background: rgba(54, 54, 54, .6);
+    background: rgba(42, 42, 42, .6);
     border-radius: 2rem;
-    transition: .2s;
+    transition: .3s;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-#github:hover { background: rgba(92, 92, 92, .6); }
-#telegram:hover { background: rgba(62, 99, 116, .6); }
-#vk:hover { background: rgba(69, 90, 115, .6); }
-#lastfm:hover { background: rgba(124, 75, 75, .6); }
+#github:hover { background: rgba(117, 117, 117, .6); }
+#telegram:hover { background: rgba(47, 95, 117, .6); }
+#vk:hover { background: rgba(47, 81, 117, .6); }
+#lastfm:hover { background: rgba(117, 47, 48, .6); }
 
 .parallax > use {
     animation: move-forever 54s cubic-bezier(.55,.5,.45,.5)     infinite;
