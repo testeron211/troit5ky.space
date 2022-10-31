@@ -17,7 +17,7 @@ body {
     justify-content: center;
     align-items: center;
     background-size: 1300% 1300%;
-    animation: bg-anim 15s linear infinite;
+    animation: bg-anim 20s ease-in-out infinite;
 }
 
 #wave {
