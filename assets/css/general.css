@@ -37,6 +37,7 @@ body {
 
 #avatar {
     height: 128px;
+    width: 128px;
     border-radius: 100%;
     border: 3px solid var(--bg-force);
     cursor: pointer;
@@ -45,6 +46,7 @@ body {
 
 #avatar:hover {
     height: 140px;
+    width: 140px;
     border-color: rgba(138, 135, 81, .6);
 }
 
@@ -86,6 +88,7 @@ body {
     justify-content: center;
 }
 
+#boosty:hover { background: rgba(192, 60, 12, .6); }
 #github:hover { background: rgba(145, 145, 145, .6); }
 #telegram:hover { background: rgba(58, 118, 145, .6); }
 #vk:hover { background: rgba(58, 100, 145, .6); }
